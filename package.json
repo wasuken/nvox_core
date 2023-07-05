@@ -1,0 +1,48 @@
+{
+  "name": "vo-srv",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "4.7.1",
+    "@tanstack/react-query": "^4.20.4",
+    "@types/node": "18.11.13",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.9",
+    "@types/styled-components": "^5.1.26",
+    "@types/wav": "^1.0.1",
+    "bootstrap": "^5.2.3",
+    "cheerio": "^1.0.0-rc.12",
+    "crunker": "^2.0.0",
+    "kuromoji": "^0.1.2",
+    "next": "13.0.6",
+    "openai": "^3.1.0",
+    "prisma": "^4.7.1",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "18.2.0",
+    "react-query": "^3.39.2",
+    "rss-parser": "^3.12.0",
+    "styled-components": "^5.3.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "voicevox-api-client": "^1.1.1",
+    "wav": "^1.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.19.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.2.5",
+    "babel-jest": "^29.3.1",
+    "babel-plugin-styled-components": "^2.0.7",
+    "jest": "^29.3.1",
+    "jest-css-modules": "^2.1.0"
+  }
+}

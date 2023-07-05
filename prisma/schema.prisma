@@ -1,0 +1,23 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model WavQueue {
+  id Int @id @default(autoincrement()) @map("wav_queue_id")
+  contents String
+  wav_path String?
+  wav_url String?
+  generated Boolean @default(false)
+  createdAt DateTime  @default(now()) @map(name: "created_at")
+  updatedAt DateTime  @updatedAt @map(name: "updated_at")
+  @@map("wav_queue")
+}
+
